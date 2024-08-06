@@ -1,4 +1,4 @@
-@use '../node_modules/@skyscanner/bpk-foundations-web/tokens/base.scss' as base;
+@use '~@skyscanner/bpk-foundations-web/tokens/base.scss' as base;
 
 @mixin container {
 	max-width: base.$bpk-breakpoint-desktop;
