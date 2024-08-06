@@ -1,0 +1,53 @@
+@use '../node_modules/@skyscanner/bpk-foundations-web/tokens/base.scss' as base;
+
+@mixin container {
+	max-width: base.$bpk-breakpoint-desktop;
+	margin: 0 auto;
+}
+
+@mixin bpk-box-shadow-sm{
+  box-shadow: base.$bpk-box-shadow-sm;
+}
+
+@mixin bpk-breakpoint-mobile-header{
+	padding: base.bpk-spacing-xl();
+}
+
+@mixin bpk-breakpoint-mobile-main{
+	padding: base.bpk-spacing-base();
+}
+
+.App {
+	text-align: center;
+
+	&__header {
+		padding: base.bpk-spacing-lg() * 2;
+		background-color: base.$bpk-color-sky-blue;
+		background-image: base.$bpk-primary-gradient;
+		color: base.$bpk-color-white;
+
+		@include bpk-box-shadow-sm;
+
+		@include bpk-breakpoint-mobile-header();
+	}
+
+	&__header-inner {
+		@include container;
+	}
+
+	&__main {
+		padding: base.bpk-spacing-xxl();
+
+		@include container;
+
+		@include bpk-breakpoint-mobile-main()
+	}
+
+	&__heading {
+		margin-bottom: base.bpk-spacing-sm();
+	}
+
+	&__text {
+		margin-bottom: base.bpk-spacing-sm();
+	}
+}
