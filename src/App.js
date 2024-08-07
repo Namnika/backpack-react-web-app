@@ -96,6 +96,7 @@ const App = () => {
 					nextMonthLabel="Next Month"
 					previousMonthLabel="Previous Month"
 					selectionConfiguration={selectionConfiguration}
+					className={getClassName('App__calendar')}
 				/>
 				<BpkButton onClick={() => alert('It works!')}>Continue</BpkButton>
 			</main>
