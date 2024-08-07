@@ -7,7 +7,7 @@ import { cssModules } from '@skyscanner/backpack-web/bpk-react-utils';
 
 import STYLES from './App.scss';
 import BpkCalendar, { CALENDAR_SELECTION_TYPE } from '@skyscanner/backpack-web/bpk-component-calendar';
-import { format } from 'date-fns/format'
+import format from 'date-fns/format'
 
 const getClassName = cssModules(STYLES);
 const formatDateFull = (date) => format(date, 'EEEE, do MMMM yyyy')
