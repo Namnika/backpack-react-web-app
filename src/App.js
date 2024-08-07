@@ -62,7 +62,7 @@ const daysOfWeek = [
 
 const App = () => {
 	const [selectionConfiguration, setSelectionConfiguration] = useState({
-		type: CALENDAR_SELECTION_TYPE,
+		type: CALENDAR_SELECTION_TYPE.single,
 		date: null
 	})
 
@@ -85,7 +85,6 @@ const App = () => {
 				<BpkText tagName="p" className={getClassName('App__text')}>
 					To get started, edit <BpkCode>src/App.jsx</BpkCode> and save to reload.
 				</BpkText>
-
 				<BpkCalendar
 					id='calendar'
 					onDateSelect={handleDateSelect}
@@ -98,8 +97,6 @@ const App = () => {
 					previousMonthLabel="Previous Month"
 					selectionConfiguration={selectionConfiguration}
 				/>
-
-
 				<BpkButton onClick={() => alert('It works!')}>Continue</BpkButton>
 			</main>
 		</div>
