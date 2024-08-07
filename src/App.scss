@@ -50,4 +50,8 @@
 	&__text {
 		margin-bottom: base.bpk-spacing-sm();
 	}
+
+	&__calendar{
+		margin: base.bpk-spacing-xxl() auto
+	}
 }
