@@ -3,7 +3,7 @@ import { BpkCode } from '@skyscanner/backpack-web/bpk-component-code';
 import BpkButton from '@skyscanner/backpack-web/bpk-component-button';
 import BpkText from '@skyscanner/backpack-web/bpk-component-text';
 
-import cssModules from '@skyscanner/backpack-web/bpk-react-utils/src/cssModules';
+import cssModules from '@skyscanner/backpack-web/bpk-react-utils';
 
 import STYLES from './App.scss';
 import BpkCalendar, { CALENDAR_SELECTION_TYPE } from '@skyscanner/backpack-web/bpk-component-calendar';
